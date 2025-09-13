@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keahlian - Skill</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<!-- Particles Background -->
+<div id="particles-js" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-gray-800">Keahlian saya</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-blue-600">Profil</a>
+        <a href="about.html" class="hover:text-blue-600">Data Akademik</a>
+        <a href="contact.html" class="hover:text-blue-600">Kontak</a>
+        <a href="sklis.html" class="hover:text-blue-600">Keahlian</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Keahlian -->
+  <main class="flex-1 max-w-4xl mx-auto p-6 pb-32">
+    <h2 class="text-2xl font-bold mb-6 text-center">Keahlian Saya</h2>
+
+    <p class="text-center mb-8">
+      Berikut adalah beberapa keahlian yang saya kuasai beserta tingkatannya.
+    </p>
+
+    <div class="space-y-6">
+      <div>
+        <h3 class="font-semibold mb-2">Adobe ilustrator</h3>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-blue-600 h-4 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">HTML CSS</h3>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-yellow-500 h-4 rounded-full" style="width: 50%;"></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">VS Code</h3>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-green-500 h-4 rounded-full" style="width: 65%;"></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Blender</h3>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="bg-purple-600 h-4 rounded-full" style="width: 70%;"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-gray-800 py-4 text-center">
+    <p>&copy; 2025 - Web Pribadi Adly Rafli Mustafa</p>
+  </footer>
+
+      <script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#ffffff" },
+    "shape": {
+      "type": "sphere",
+      "stroke": { "width": 2, "color": "#000000" }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false
+    },
+    "size": {
+      "value": 2,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#000000",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": true, "mode": "push" }
+    },
+    "modes": {
+      "repulse": { "distance": 100 },
+      "push": { "particles_nb": 4 }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>

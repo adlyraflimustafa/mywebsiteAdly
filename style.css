@@ -1,0 +1,189 @@
+/* ================== Global Layout ================== */
+main {
+  min-height: 70vh;
+  padding-bottom: 50px; 
+}
+
+header h1 {
+  letter-spacing: 1px;
+  color: #1f2937; 
+}
+
+header nav a {
+  transition: color 0.3s ease;
+}
+
+.hero-gradient {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-gradient {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientTable 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradientTable {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+table tbody tr:hover {
+  background-color: #e0f2fe;
+  transition: background 0.3s ease;
+}
+
+footer {
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 10px;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff, #bcbec2);
+  z-index: -1;
+}
+
+
+/* ================== Media & Visuals ================== */
+img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ================== Forms ================== */
+form input,
+form textarea {
+  border: 1px solid #d1d5db; 
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+form button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  transform: scale(1.02);
+}
+
+/* ================== Animasi Box (Optional) ================== */
+main .bg-blue-600,
+main .bg-yellow-500,
+main .bg-green-500,
+main .bg-purple-600 {
+  transition: width 1s ease-in-out;
+}
+
+/* ================== Responsive ================== */
+
+/* Tablet dan HP */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  main {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  table th, 
+  table td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+}

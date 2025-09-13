@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Kontak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<!-- Particles Background -->
+<div id="particles-js" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-gray-800">Kontak saya</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-blue-600">Profil</a>
+        <a href="about.html" class="hover:text-blue-600">Data Akademik</a>
+        <a href="contact.html" class="hover:text-blue-600">Kontak</a>
+        <a href="sklis.html" class="hover:text-blue-600">Keahlian</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kontak -->
+  <main class="flex-1 max-w-4xl mx-auto p-6 pb-32">
+    <h2 class="text-2xl font-bold mb-6 text-center">Hubungi Saya</h2>
+
+    <p class="text-center mb-8">
+      Jika Anda ingin menghubungi saya, silakan gunakan form berikut atau melalui sosial media.
+    </p>
+
+    <!-- Form Kontak -->
+    <form action="#" method="post" class="bg-white shadow-lg rounded-xl p-6 space-y-4 max-w-lg mx-auto">
+      <div>
+        <label for="nama" class="block font-semibold mb-1">Nama</label>
+        <input type="text" id="nama" name="nama" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400" placeholder="Masukkan nama Anda">
+      </div>
+      <div>
+        <label for="email" class="block font-semibold mb-1">Email</label>
+        <input type="email" id="email" name="email" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400" placeholder="Masukkan email Anda">
+      </div>
+      <div>
+        <label for="pesan" class="block font-semibold mb-1">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400" placeholder="Tulis pesan Anda di sini"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        Kirim Pesan
+      </button>
+    </form>
+
+    <!-- Sosial Media -->
+    <div class="mt-10 text-center">
+      <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+      <ul class="space-y-2">
+        <li><a href="https://facebook.com" target="_blank" class="text-blue-600 hover:underline">Facebook</a></li>
+        <li><a href="https://instagram.com" target="_blank" class="text-pink-600 hover:underline">Instagram</a></li>
+        <li><a href="https://github.com" target="_blank" class="text-gray-800 hover:underline">GitHub</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-gray-800 py-4 text-center">
+    <p>&copy; 2025 - Web Pribadi Adly Rafli Mustafa</p>
+  </footer>
+
+    <script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#ffffff" },
+    "shape": {
+      "type": "sphere",
+      "stroke": { "width": 2, "color": "#000000" }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false
+    },
+    "size": {
+      "value": 2,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#000000",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": true, "mode": "push" }
+    },
+    "modes": {
+      "repulse": { "distance": 100 },
+      "push": { "particles_nb": 4 }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>

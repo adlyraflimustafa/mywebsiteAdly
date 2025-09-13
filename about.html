@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya - Akademik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+<!-- Particles Background -->
+<div id="particles-js" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-black-600">Akademik saya</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-blue-600">Profil</a>
+        <a href="about.html" class="hover:text-blue-600">Data akademik</a>
+        <a href="contact.html" class="hover:text-blue-600">Kontak</a>
+        <a href="sklis.html" class="hover:text-blue-600">Keahlian</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Data Akademik -->
+  <main class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Data Akademik</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse shadow-lg bg-white rounded-xl">
+<thead class="table-gradient text-white">
+  <tr>
+    <th class="px-4 py-2 border">No</th>
+    <th class="px-4 py-2 border">Mata Kuliah</th>
+    <th class="px-4 py-2 border">Nilai</th>
+  </tr>
+</thead>
+
+        <tbody class="text-center">
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">1</td>
+            <td class="border px-4 py-2">Pemrograman Web</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">2</td>
+            <td class="border px-4 py-2">Basis Data</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">3</td>
+            <td class="border px-4 py-2">Statistika</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">4</td>
+            <td class="border px-4 py-2">Algoritma dan Struktur Data</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">5</td>
+            <td class="border px-4 py-2">Sistem Operasi</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">6</td>
+            <td class="border px-4 py-2">Jaringan Komputer</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">7</td>
+            <td class="border px-4 py-2">Multimedia</td>
+            <td class="border px-4 py-2">A</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="border px-4 py-2">8</td>
+            <td class="border px-4 py-2">E-commerce</td>
+            <td class="border px-4 py-2">A</td>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="absolute bottom-0 w-full bg-white text-gray-800 py-4 text-center">
+    <p>&copy; 2025 - Web Pribadi Adly Rafli Mustafa</p> 
+  </footer>
+
+    <script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#ffffff" },
+    "shape": {
+      "type": "sphere",
+      "stroke": { "width": 2, "color": "#000000" }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false
+    },
+    "size": {
+      "value": 2,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#000000",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": true, "mode": "push" }
+    },
+    "modes": {
+      "repulse": { "distance": 100 },
+      "push": { "particles_nb": 4 }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>
